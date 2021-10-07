@@ -15,8 +15,8 @@ namespace U1_Examen
         public Form1()
         {
             InitializeComponent();
-            vacabailando.Image = Image.FromFile(@"C:\Users\gabri\OneDrive\Escritorio\vaca2.gif ");
-            vacabailando.SizeMode = PictureBoxSizeMode.AutoSize;
+        //    vacabailando.Image = Image.FromFile(@"C:\Users\gabri\OneDrive\Escritorio\vaca2.gif ");
+        //    vacabailando.SizeMode = PictureBoxSizeMode.AutoSize;
 
             txbValorUnitario.Text = "0";
             txbCantidad.Text = "0";
@@ -100,6 +100,11 @@ namespace U1_Examen
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

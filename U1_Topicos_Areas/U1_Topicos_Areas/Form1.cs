@@ -48,6 +48,7 @@ namespace U1_Topicos_Areas
                 lblResultado.Text = " " + resultado;
             }
 
+
             if (txbAltura.Text != "" & txbBase.Text!="")
             {
                 //Sacando triangulo
