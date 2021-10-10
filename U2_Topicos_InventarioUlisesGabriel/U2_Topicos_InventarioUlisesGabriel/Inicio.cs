@@ -23,7 +23,7 @@ namespace U2_Topicos_InventarioUlisesGabriel
             {
                 if (txbUsuario.Text=="Admin" && (txbContraseña.Text =="pass"))
                 {
-
+                   
                 }
             }
         }
