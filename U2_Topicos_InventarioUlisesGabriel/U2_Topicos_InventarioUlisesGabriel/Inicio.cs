@@ -12,6 +12,8 @@ namespace U2_Topicos_InventarioUlisesGabriel
 {
     public partial class Inicio : Form
     {
+
+        Inventario Inv = new Inventario();
         public Inicio()
         {
             InitializeComponent();
@@ -19,13 +21,19 @@ namespace U2_Topicos_InventarioUlisesGabriel
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if ((txbUsuario.Text!="") && (txbContraseña.Text!=""))
+           if (txbUsuario.Text=="Admin" && (txbContraseña.Text =="pass"))
             {
-                if (txbUsuario.Text=="Admin" && (txbContraseña.Text =="pass"))
-                {
-                   
-                }
+                MessageBox.Show("vamos");
+                Inv.ShowDialog();
+                
             }
+            else
+            {
+                MessageBox.Show("error de usuario");
+                txbUsuario.Text="";
+                txbContraseña.Text = "";
+            }
+            
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
