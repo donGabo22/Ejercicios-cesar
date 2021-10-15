@@ -14,6 +14,7 @@ namespace U2_Topicos_InventarioUlisesGabriel
     {
 
         Inventario Inv = new Inventario();
+        Form1 lolipop = new Form1();
         public Inicio()
         {
             InitializeComponent();
@@ -23,6 +24,8 @@ namespace U2_Topicos_InventarioUlisesGabriel
         {
            if (txbUsuario.Text=="Admin" && (txbContraseña.Text =="pass"))
             {
+                this.Hide();
+                lolipop.ShowDialog();
                 MessageBox.Show("vamos");
                 Inv.ShowDialog();
                 
@@ -47,6 +50,11 @@ namespace U2_Topicos_InventarioUlisesGabriel
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
