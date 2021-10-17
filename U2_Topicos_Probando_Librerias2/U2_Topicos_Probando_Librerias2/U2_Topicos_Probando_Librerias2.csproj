@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="U2_Topicos_Operaciones">
+      <HintPath>..\..\U2_Topicos_Operaciones\U2_Topicos_Operaciones\obj\Debug\netcoreapp3.1\U2_Topicos_Operaciones.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

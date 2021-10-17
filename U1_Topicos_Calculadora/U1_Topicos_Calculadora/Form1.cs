@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -117,6 +118,9 @@ namespace U1_Topicos_Calculadora
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\gabri\OneDrive\Escritorio\sonido.wav");
+
+            simpleSound.Play();
             txbDigitos.Text = "";
             lblresultado.Text = "";
         }
