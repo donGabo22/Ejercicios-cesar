@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace U2_Topicos_InventarioUlisesGabriel
 {
     public partial class Form1 : Form
@@ -29,18 +30,21 @@ namespace U2_Topicos_InventarioUlisesGabriel
         DateTime hoy = DateTime.Now;
         public void Form1_Load(object sender, EventArgs e)
         {
-           //  Inicio i = new Inicio(txbUsuario);
+            Inicio i = new Inicio();
             // string nombre = i.txbUsuario.toString();
-
 
             lblFechaBienvenido.Text = hoy.ToLongDateString();
             lblHoraBienvenido.Text = hoy.ToShortTimeString();
+            String n=NombreUsuario.Text;
+            String no=i.MetodoNombre(n);
+            NombreUsuario.Text = no;
 
             this.Opacity = 0.0;
             progressBar1.Value = 0;
             progressBar1.Minimum = 0;
             progressBar1.Maximum = 100;
             timer1.Start();
+            
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -51,6 +55,11 @@ namespace U2_Topicos_InventarioUlisesGabriel
                 timer2.Stop();
                 this.Close();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
