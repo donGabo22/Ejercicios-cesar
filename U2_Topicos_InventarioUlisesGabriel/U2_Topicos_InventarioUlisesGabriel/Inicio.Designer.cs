@@ -54,9 +54,8 @@ namespace U2_Topicos_InventarioUlisesGabriel
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::U2_Topicos_InventarioUlisesGabriel.Properties.Resources.azul;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(437, 303);
+            this.pictureBox1.Size = new System.Drawing.Size(624, 438);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -65,10 +64,9 @@ namespace U2_Topicos_InventarioUlisesGabriel
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(95, 119);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(136, 198);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 21);
+            this.label1.Size = new System.Drawing.Size(99, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuario:";
             // 
@@ -77,38 +75,35 @@ namespace U2_Topicos_InventarioUlisesGabriel
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(95, 148);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(136, 247);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 21);
+            this.label2.Size = new System.Drawing.Size(139, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Contraseña:";
             // 
             // txbUsuario
             // 
-            this.txbUsuario.Location = new System.Drawing.Point(202, 119);
-            this.txbUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txbUsuario.Location = new System.Drawing.Point(289, 198);
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.PlaceholderText = "Email ID";
-            this.txbUsuario.Size = new System.Drawing.Size(134, 23);
+            this.txbUsuario.Size = new System.Drawing.Size(190, 31);
             this.txbUsuario.TabIndex = 3;
             // 
             // txbContraseña
             // 
-            this.txbContraseña.Location = new System.Drawing.Point(202, 150);
-            this.txbContraseña.Margin = new System.Windows.Forms.Padding(2);
+            this.txbContraseña.Location = new System.Drawing.Point(289, 250);
             this.txbContraseña.Name = "txbContraseña";
+            this.txbContraseña.PasswordChar = '*';
             this.txbContraseña.PlaceholderText = "Password";
-            this.txbContraseña.Size = new System.Drawing.Size(134, 23);
+            this.txbContraseña.Size = new System.Drawing.Size(190, 31);
             this.txbContraseña.TabIndex = 4;
             // 
             // btnLogin
             // 
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnLogin.Location = new System.Drawing.Point(158, 207);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogin.Location = new System.Drawing.Point(226, 345);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(78, 35);
+            this.btnLogin.Size = new System.Drawing.Size(111, 58);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Iniciar Sección";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -119,8 +114,7 @@ namespace U2_Topicos_InventarioUlisesGabriel
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = global::U2_Topicos_InventarioUlisesGabriel.Properties.Resources.avatar;
-            this.pictureBox2.Location = new System.Drawing.Point(144, -17);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(205, 30);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(132, 132);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -131,10 +125,9 @@ namespace U2_Topicos_InventarioUlisesGabriel
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::U2_Topicos_InventarioUlisesGabriel.Properties.Resources.salir;
-            this.pictureBox3.Location = new System.Drawing.Point(396, 227);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(565, 379);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 36);
+            this.pictureBox3.Size = new System.Drawing.Size(59, 59);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -144,10 +137,9 @@ namespace U2_Topicos_InventarioUlisesGabriel
             // 
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = global::U2_Topicos_InventarioUlisesGabriel.Properties.Resources.candado;
-            this.pictureBox4.Location = new System.Drawing.Point(69, 148);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Location = new System.Drawing.Point(99, 247);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(23, 20);
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
@@ -156,10 +148,9 @@ namespace U2_Topicos_InventarioUlisesGabriel
             // 
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Image = global::U2_Topicos_InventarioUlisesGabriel.Properties.Resources.usuario;
-            this.pictureBox5.Location = new System.Drawing.Point(69, 121);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Location = new System.Drawing.Point(99, 202);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(23, 20);
+            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
@@ -168,10 +159,9 @@ namespace U2_Topicos_InventarioUlisesGabriel
             // 
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.btnRegistrar.Location = new System.Drawing.Point(95, 172);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrar.Location = new System.Drawing.Point(136, 287);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(209, 22);
+            this.btnRegistrar.Size = new System.Drawing.Size(299, 37);
             this.btnRegistrar.TabIndex = 10;
             this.btnRegistrar.Text = "¿No tienes una cuenta? Registrate";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -183,9 +173,9 @@ namespace U2_Topicos_InventarioUlisesGabriel
             // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 303);
+            this.ClientSize = new System.Drawing.Size(624, 438);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -197,8 +187,8 @@ namespace U2_Topicos_InventarioUlisesGabriel
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de Sección";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

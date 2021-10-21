@@ -15,15 +15,28 @@ namespace U2_Topicos_InventarioUlisesGabriel
 
         Inventario Inv = new Inventario();
         Form1 lolipop = new Form1();
+
+
         public Inicio()
         {
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        public void btnLogin_Click(object sender, EventArgs e)
         {
-           if (txbUsuario.Text=="Admin" && (txbContraseña.Text =="pass"))
+            String nombre = txbUsuario.Text;
+            String contraseña = txbContraseña.Text;
+            RegistroParaElInicio login = new RegistroParaElInicio();
+
+         //   RegistroParaElInicio(nombre, int.Parse(contraseña);
+
+
+
+
+            //   if (txbUsuario.Text == nombre && (txbContraseña.Text == pass))
+            if (txbUsuario.Text=="Admin" && (txbContraseña.Text =="pass"))
             {
+
                 this.Hide();
                 lolipop.ShowDialog();
                 MessageBox.Show("vamos");
@@ -32,17 +45,16 @@ namespace U2_Topicos_InventarioUlisesGabriel
             }
             else
             {
-                MessageBox.Show("error de usuario");
+                MessageBox.Show("error , contraseña o usuario invalido");
                 txbUsuario.Text="";
                 txbContraseña.Text = "";
             }
-            
+
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             RegistroParaElInicio formRegistro = new RegistroParaElInicio();
-
             formRegistro.ShowDialog();
 
         }

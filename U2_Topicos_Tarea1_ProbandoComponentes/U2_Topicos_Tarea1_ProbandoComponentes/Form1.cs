@@ -16,5 +16,10 @@ namespace U2_Topicos_Tarea1_ProbandoComponentes
         {
             InitializeComponent();
         }
+
+        private void ucBotonConSonido1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

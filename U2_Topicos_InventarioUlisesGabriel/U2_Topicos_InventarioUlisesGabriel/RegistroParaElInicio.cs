@@ -14,7 +14,15 @@ namespace U2_Topicos_InventarioUlisesGabriel
         {
             InitializeComponent();
         }
-      
+
+        //public RegistroParaElInicio(String nombre, int pass)
+        //{
+        //    InitializeComponent();
+        //    this.txbNombreIS = txbNombreIS;
+        //    this.txbContraseñaIS = txbContraseñaIS;
+        //}
+
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (this.Opacity < 1) this.Opacity += 0.05;

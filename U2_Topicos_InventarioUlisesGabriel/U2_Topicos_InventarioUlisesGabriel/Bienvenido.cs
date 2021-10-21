@@ -26,13 +26,20 @@ namespace U2_Topicos_InventarioUlisesGabriel
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        DateTime hoy = DateTime.Now;
+        public void Form1_Load(object sender, EventArgs e)
         {
+           //  Inicio i = new Inicio(txbUsuario);
+            // string nombre = i.txbUsuario.toString();
+
+
+            lblFechaBienvenido.Text = hoy.ToLongDateString();
+            lblHoraBienvenido.Text = hoy.ToShortTimeString();
+
             this.Opacity = 0.0;
             progressBar1.Value = 0;
             progressBar1.Minimum = 0;
             progressBar1.Maximum = 100;
-
             timer1.Start();
         }
 

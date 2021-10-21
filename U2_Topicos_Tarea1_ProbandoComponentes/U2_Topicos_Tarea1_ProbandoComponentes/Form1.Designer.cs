@@ -39,6 +39,7 @@ namespace U2_Topicos_Tarea1_ProbandoComponentes
             this.ucBotonConSonido1.Name = "ucBotonConSonido1";
             this.ucBotonConSonido1.Size = new System.Drawing.Size(337, 208);
             this.ucBotonConSonido1.TabIndex = 0;
+            this.ucBotonConSonido1.Load += new System.EventHandler(this.ucBotonConSonido1_Load);
             // 
             // Form1
             // 
