@@ -48,11 +48,11 @@ namespace U3_EXAMEN_PASTELERIA
 
                 Inventario1.FechadeCaducidad = dtpFechaCaducidad.Text;
 
-                //paso 2 notificamos que queremos agregar un empleado
+            
 
                 context.Inventarios.Add(Inventario1);
 
-                //paso 3 guardamos los cambios
+            
 
                 context.SaveChanges();
 
@@ -77,6 +77,7 @@ namespace U3_EXAMEN_PASTELERIA
                         producto.CantidadenInventario = txbCantidad.Text;
                         producto.FechadeCaducidad = dtpFechaCaducidad.Text;
                         context.SaveChanges();
+                       // todoProducto(); ?
                     }
                 }
             }

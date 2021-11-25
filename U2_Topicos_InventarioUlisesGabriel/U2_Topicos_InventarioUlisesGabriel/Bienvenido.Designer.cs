@@ -39,6 +39,7 @@ namespace U2_Topicos_InventarioUlisesGabriel
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblHoraBienvenido = new System.Windows.Forms.Label();
             this.lblFechaBienvenido = new System.Windows.Forms.Label();
+            this.NombreUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -55,21 +56,22 @@ namespace U2_Topicos_InventarioUlisesGabriel
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(108, 394);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.progressBar1.Location = new System.Drawing.Point(76, 236);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(391, 38);
+            this.progressBar1.Size = new System.Drawing.Size(274, 23);
             this.progressBar1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::U2_Topicos_InventarioUlisesGabriel.Properties.Resources.azul;
-            this.pictureBox1.Location = new System.Drawing.Point(-11, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-8, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(626, 442);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -77,26 +79,29 @@ namespace U2_Topicos_InventarioUlisesGabriel
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 72);
+            this.label1.Size = new System.Drawing.Size(225, 48);
             this.label1.TabIndex = 3;
             this.label1.Text = "BIENVENIDO";
             // 
             // lblNombredeBienvenido
             // 
             this.lblNombredeBienvenido.AutoSize = true;
-            this.lblNombredeBienvenido.Location = new System.Drawing.Point(12, 90);
+            this.lblNombredeBienvenido.Location = new System.Drawing.Point(8, 54);
+            this.lblNombredeBienvenido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombredeBienvenido.Name = "lblNombredeBienvenido";
-            this.lblNombredeBienvenido.Size = new System.Drawing.Size(82, 25);
+            this.lblNombredeBienvenido.Size = new System.Drawing.Size(54, 15);
             this.lblNombredeBienvenido.TabIndex = 4;
             this.lblNombredeBienvenido.Text = "Nombre:";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::U2_Topicos_InventarioUlisesGabriel.Properties.Resources.inventario;
-            this.pictureBox2.Location = new System.Drawing.Point(166, 187);
+            this.pictureBox2.Location = new System.Drawing.Point(116, 112);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(283, 199);
+            this.pictureBox2.Size = new System.Drawing.Size(198, 119);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -104,26 +109,38 @@ namespace U2_Topicos_InventarioUlisesGabriel
             // lblHoraBienvenido
             // 
             this.lblHoraBienvenido.AutoSize = true;
-            this.lblHoraBienvenido.Location = new System.Drawing.Point(507, 38);
+            this.lblHoraBienvenido.Location = new System.Drawing.Point(355, 23);
+            this.lblHoraBienvenido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHoraBienvenido.Name = "lblHoraBienvenido";
-            this.lblHoraBienvenido.Size = new System.Drawing.Size(52, 25);
+            this.lblHoraBienvenido.Size = new System.Drawing.Size(34, 15);
             this.lblHoraBienvenido.TabIndex = 7;
             this.lblHoraBienvenido.Text = "hora:";
             // 
             // lblFechaBienvenido
             // 
             this.lblFechaBienvenido.AutoSize = true;
-            this.lblFechaBienvenido.Location = new System.Drawing.Point(342, 0);
+            this.lblFechaBienvenido.Location = new System.Drawing.Point(239, 0);
+            this.lblFechaBienvenido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFechaBienvenido.Name = "lblFechaBienvenido";
-            this.lblFechaBienvenido.Size = new System.Drawing.Size(58, 25);
+            this.lblFechaBienvenido.Size = new System.Drawing.Size(39, 15);
             this.lblFechaBienvenido.TabIndex = 8;
             this.lblFechaBienvenido.Text = "fecha:";
             // 
+            // NombreUsuario
+            // 
+            this.NombreUsuario.AutoSize = true;
+            this.NombreUsuario.Location = new System.Drawing.Point(67, 54);
+            this.NombreUsuario.Name = "NombreUsuario";
+            this.NombreUsuario.Size = new System.Drawing.Size(53, 15);
+            this.NombreUsuario.TabIndex = 9;
+            this.NombreUsuario.Text = "No se xd";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 446);
+            this.ClientSize = new System.Drawing.Size(439, 268);
+            this.Controls.Add(this.NombreUsuario);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblFechaBienvenido);
             this.Controls.Add(this.lblHoraBienvenido);
@@ -131,7 +148,6 @@ namespace U2_Topicos_InventarioUlisesGabriel
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido";
@@ -156,5 +172,6 @@ namespace U2_Topicos_InventarioUlisesGabriel
         private System.Windows.Forms.Label lblHoraBienvenido;
         private System.Windows.Forms.Label lblFechaBienvenido;
         private System.Windows.Forms.DateTimePicker dtpHoraBienvenido;
+        private System.Windows.Forms.Label NombreUsuario;
     }
 }
