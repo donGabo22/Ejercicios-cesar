@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace U1_Topicos_InterfazGrafica
 {
-    public partial class Dashboard : Form
+    public partial class frmDashboard : Form
     {
-        public Dashboard()
+        public frmDashboard()
         {
             InitializeComponent();
         }
@@ -21,50 +21,56 @@ namespace U1_Topicos_InterfazGrafica
         {
 
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
+            frmEmpleados frmE = new frmEmpleados();
+            frmE.Show();
 
         }
-
         private void pictureBox7_Click(object sender, EventArgs e)
         {
 
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void btnConfiguraciones_Click(object sender, EventArgs e)
-        {
-            lblNombreUsuario.Text = "Don Gabo";
-        }
-
         private void lblRoldeUsuario_Click(object sender, EventArgs e)
         {
 
         }
-
         private void button8_Click(object sender, EventArgs e)
         {
 
         }
-
         private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
+        private void btnConfiguraciones_Click(object sender, EventArgs e)
+        {
+           // lblNombreUsuario.Text = "Don Gabo";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            formClientes frmC = new formClientes();
+            frmC.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmInventario frmI = new frmInventario();
+            frmI.Show();
+        }
     }
+
 }

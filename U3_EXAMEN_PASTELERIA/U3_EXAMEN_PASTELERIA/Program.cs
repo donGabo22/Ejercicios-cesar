@@ -1,10 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace U1_Topicos_InterfazGrafica
+namespace U3_EXAMEN_PASTELERIA
 {
     static class Program
     {
@@ -17,7 +14,7 @@ namespace U1_Topicos_InterfazGrafica
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDashboard());
+            Application.Run(new Bienvenido());
         }
     }
 }

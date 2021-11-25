@@ -30,9 +30,6 @@ namespace U2_Topicos_InventarioUlisesGabriel
 
          //   RegistroParaElInicio(nombre, int.Parse(contraseña);
 
-
-
-
             //   if (txbUsuario.Text == nombre && (txbContraseña.Text == pass))
             if (txbUsuario.Text=="Admin" && (txbContraseña.Text =="pass"))
             {
