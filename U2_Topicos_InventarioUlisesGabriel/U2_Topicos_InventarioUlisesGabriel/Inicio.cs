@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace U2_Topicos_InventarioUlisesGabriel
 {
+    
     public partial class Inicio : Form
     {
-
+        
         Inventario Inv = new Inventario();
         Form1 lolipop = new Form1();
 
@@ -20,7 +21,10 @@ namespace U2_Topicos_InventarioUlisesGabriel
         public Inicio()
         {
             InitializeComponent();
+            
         }
+
+
 
         public void btnLogin_Click(object sender, EventArgs e)
         {
@@ -59,6 +63,13 @@ namespace U2_Topicos_InventarioUlisesGabriel
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public string MetodoNombre(string N)
+        {
+            N = txbUsuario.Text;
+            MessageBox.Show("" + N);
+            return N;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
